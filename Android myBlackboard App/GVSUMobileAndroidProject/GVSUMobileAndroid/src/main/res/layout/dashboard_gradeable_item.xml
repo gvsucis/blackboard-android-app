@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gvsu_blue"
+        android:visibility="gone"
+        android:id="@+id/rl_due_list_header">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/gradeable_white"
+            android:clickable="true"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dashlist_gradeable_section_title"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_alignParentTop="true"
+            android:layout_alignBottom="@+id/imageView"
+            android:typeface="normal"
+            android:textSize="@dimen/gvsu_large"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageViewArrow"
+            android:src="@drawable/right_arrow"
+            android:clickable="true"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/dashlist_gradeable_section_title"
+            android:visibility="gone"/>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:id="@+id/ll_dash_gradeable_list"
+            android:orientation="vertical"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/dashlist_gradeable_section_title"
+            android:background="@android:color/background_light"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/divider"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:visibility="gone"
+        android:layout_below="@id/rl_due_list_header"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/gvsu_item_title"
+        android:id="@+id/dashlist_gradeable_title"
+        android:layout_gravity="center"
+        android:gravity="center_vertical|left"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:background="@color/white"
+        android:textAlignment="center"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/divider"
+        android:background="@color/white"
+        android:paddingTop="4dp"
+        android:id="@+id/linearLayout2">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:background="@color/gvsu_blue_light"
+        android:layout_alignParentLeft="true">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/gvsu_text_light"
+            android:layout_marginLeft="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/gvsu_small"
+                android:textColor="@color/gvsu_list_item_text"
+                android:id="@+id/dashlist_gradeable_crs"
+                android:gravity="right"
+                android:paddingRight="10dp"
+                android:background="@color/white"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="3.44" />
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/tv_dash_gradeable_due_label"
+    android:layout_below="@id/dashlist_gradeable_title"
+    android:paddingLeft="10dp"
+    android:textSize="@dimen/gvsu_medium"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="3dp"
+        android:textSize="@dimen/gvsu_medium"
+        android:layout_below="@id/dashlist_gradeable_title"
+        android:layout_toRightOf="@id/tv_dash_gradeable_due_label"
+        android:id="@+id/tv_dash_gradeable_due_date"/>
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/tv_gradeable_desc"
+        android:background="@color/white"
+        android:textSize="@dimen/gvsu_small"
+        android:textColor="@color/gvsu_text_medium"
+        android:gravity="center_vertical"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:layout_below="@+id/tv_dash_gradeable_due_label"
+        android:layout_alignParentLeft="true" />
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/dashlist_gradeable_title"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:id="@+id/ll_cnt_num_files"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/paperclip"/>
+    </LinearLayout>
+
+</RelativeLayout>

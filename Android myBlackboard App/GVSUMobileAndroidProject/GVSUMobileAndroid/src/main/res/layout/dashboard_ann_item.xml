@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gvsu_blue"
+        android:id="@+id/rv_ann_header"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ann_icon_white"
+            android:clickable="true"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dashlist_ann_section_title"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_alignParentTop="true"
+            android:layout_alignBottom="@+id/imageView"
+            android:typeface="normal"
+            android:textSize="@dimen/gvsu_large" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageViewArrow"
+            android:src="@drawable/right_arrow"
+            android:clickable="true"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/dashlist_ann_section_title"
+            android:visibility="gone"/>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:id="@+id/ll_dash_ann_list"
+            android:orientation="vertical"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/dashlist_ann_section_title"
+            android:background="@color/gvsu_list_item_bg"
+            />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/tv_dash_date_sep_lbl"
+        android:textSize="@dimen/gvsu_medium"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:visibility="gone"
+        android:background="@color/gvsu_blue_light"
+        android:layout_below="@id/rv_ann_header"
+
+        />
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/divider"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:visibility="gone"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/tv_dash_date_sep_lbl"
+        />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/gvsu_item_title"
+        android:textColor="@color/gvsu_list_item_text"
+        android:id="@+id/dashlist_ann_title"
+        android:gravity="center_vertical|left"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:background="@color/white"
+        android:layout_weight="1.29"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true" />
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/itemTitleDivider"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:visibility="gone"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/dashlist_ann_title"
+        />
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:background="@color/white"
+        android:layout_marginTop="4dp"
+        android:paddingBottom="2dp"
+        android:layout_below="@+id/divider"
+        >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/gvsu_blue_light"
+                >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/gvsu_text_light"
+                android:layout_marginLeft="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/gvsu_small"
+                android:textColor="@color/gvsu_list_item_text"
+                android:id="@+id/dashlist_ann_crs"
+                android:gravity="left"
+                android:minWidth="100dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@color/white"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="1dp"
+
+            />
+            </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/gvsu_small"
+                android:textColor="@color/gvsu_text_medium"
+                android:id="@+id/dashlist_ann_date"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:clickable="true"
+                android:background="@color/white"
+                android:layout_alignParentRight="true" />
+
+
+
+
+    </RelativeLayout>
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="center_vertical"
+        android:id="@+id/tv_ann_preview"
+        android:textColor="@color/gvsu_text_medium"
+        android:padding="5dp"
+        android:paddingLeft="10dp"
+        android:background="@color/white"
+        android:layout_below="@+id/itemTitleDivider"
+        android:layout_alignParentLeft="true" />
+
+
+</RelativeLayout>

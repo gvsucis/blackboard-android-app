@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/gvsu_blue">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:id="@+id/linearLayout"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="false"
+    android:layout_alignParentStart="false"
+    android:layout_marginBottom="1dp"
+    android:layout_toRightOf="@+id/tv_gradeitem_points"
+    android:layout_alignParentTop="true"
+    android:background="@color/gvsu_blue"
+
+    >
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/tv_gradeitem_title"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="20dp"
+        android:background="@color/white"
+        android:textAlignment="center" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/gvsu_text_medium"
+        android:id="@+id/tv_grade_date"
+        android:layout_marginBottom="1dp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:gravity="right"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:clickable="true"
+        android:background="@color/white" />
+
+</LinearLayout>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:id="@+id/tv_gradeitem_points"
+    android:layout_alignBottom="@+id/linearLayout"
+    android:background="@color/white"
+    android:gravity="center"
+    android:paddingLeft="20dp"
+    android:layout_alignParentRight="false"
+    android:layout_alignParentEnd="false"
+    android:layout_alignParentStart="false"
+    android:layout_alignParentTop="true"
+    android:paddingBottom="10dp"
+    android:layout_marginBottom="1dp"
+    android:paddingTop="10dp"
+    />
+
+</RelativeLayout>

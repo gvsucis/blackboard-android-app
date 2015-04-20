@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="TypographyDashes">
+    <!--Replace placeholder ID with your tracking ID-->
+    <string name="ga_trackingId">UA-45939262-1</string>
+
+    <!--Enable automatic activity tracking-->
+    <bool name="ga_autoActivityTracking">true</bool>
+
+    <!--Enable automatic exception tracking-->
+    <bool name="ga_reportUncaughtExceptions">true</bool>
+
+    <string name="edu.gvsu.bbmobile.MyBB.MainActivity">Login</string>
+    <string name="edu.gvsu.bbmobile.MyBB.ViewAnn">View Announcement</string>
+    <string name="edu.gvsu.bbmobile.MyBB.DashBoard">Main List</string>
+    <string name="edu.gvsu.bbmobile.MyBB.ViewGradeable">View Gradeable</string>
+    <string name="edu.gvsu.bbmobile.MyBB.SendEmail">Send Email</string>
+</resources>

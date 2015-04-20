@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gvsu_blue"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:layout_marginBottom="1dp"
+        android:background="@color/gvsu_blue"
+        android:layout_alignParentLeft="true"
+        >
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/gvsu_large"
+        android:id="@+id/dashlist_content_title"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="20dp"
+        android:background="@color/white"
+        android:textAlignment="center" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/gvsu_small"
+        android:textColor="@color/gvsu_text_medium"
+        android:id="@+id/dashlist_content_crs"
+        android:layout_gravity="center_horizontal|right"
+        android:gravity="right"
+        android:paddingRight="10dp"
+        android:paddingBottom="20dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/white" />
+
+    </LinearLayout>
+</RelativeLayout>

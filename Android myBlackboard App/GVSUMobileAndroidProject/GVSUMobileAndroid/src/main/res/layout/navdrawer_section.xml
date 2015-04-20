@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gvsu_blue_light"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/gvsu_logo_drawer"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:background="@color/gvsu_blue"
+        />
+
+    <TextView
+        android:id="@+id/navmenusection_label"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/gvsu_medium"
+        android:paddingBottom="10dp"
+        android:textColor="#FFFFFF"
+        android:paddingTop="10dp"
+        android:gravity="center"
+        android:layout_marginTop="1dp"
+        android:background="@color/gvsu_blue"
+        android:text="@string/lbl_nav_crs_default"
+        style="?android:attr/listSeparatorTextViewStyle"
+        />
+
+</LinearLayout>

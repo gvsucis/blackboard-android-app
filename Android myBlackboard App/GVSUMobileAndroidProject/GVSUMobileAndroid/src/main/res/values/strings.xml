@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">myBlackboard</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_spring_board">SpringBoard</string>
+    <string name="title_activity_anns_list">Announcemens</string>
+    <string name="title_activity_view_ann">Announcement</string>
+    <string name="login_sug_password">password</string>
+    <string name="login_sug_username">username</string>
+    <string name="title_activity_contents_list">Content</string>
+    <string name="title_activity_course_list">Courses</string>
+    <string name="title_activity_view_course">Course</string>
+    <string name="title_activity_dash_board">myBlackboard</string>
+    <string name="title_activity_dash_board_list">Dash Board</string>
+    <string name="action_list_courses">List Courses</string>
+    <string name="due_label_end">Closes On </string>
+    <string name="due_label_due">Due</string>
+    <string name="due_label_none">Created</string>
+    <string name="due_date_none">Not Set</string>
+    <string name="dash_empty_title">There are no Items</string>
+    <string name="dialog_confirm_logout">Are you Sure?</string>
+    <string name="dialog_confirm_logout_title">This will log you out</string>
+    <string name="yes">Yes</string>
+    <string name="cancel">Cancel</string>
+    <string name="btn_load_more">Load More</string>
+    <string name="title_activity_send_email">Send Email</string>
+    <string name="abc_action_menu_overflow_description">overflow</string>
+    <string name="drawer_open">Expand</string>
+    <string name="drawer_close">Close</string>
+    <string name="nav_courses_label">Courses</string>
+    <string name="toast_file_download_success">File Downloaded</string>
+    <string name="num_files_label">Attachments:</string>
+    <string name="title_activity_view_gradeable">Due Soon</string>
+    <string name="lbl_nav_crs_default">All Courses</string>
+    <string name="view_all_crs">View All Courses</string>
+    <string name="view_all_cnt">All Content</string>
+    <string name="nav_ann_lbl">Announcements</string>
+    <string name="nav_grades_lbl">Grades</string>
+    <string name="nav_gradeables_lbl">Due Soon</string>
+    <string name="nav_send_email_lbl">Send Email</string>
+    <string name="lbl_login_spinner">Authenticating</string>
+    <string name="lbl_not_get_courses">Could not load courses</string>
+    <string name="ok">OK</string>
+    <string name="do_logout">This will log you out of blackboard. Would you like to continue?</string>
+    <string name="dialog_title">Logout Confirmation</string>
+    <string name="action_logout">Logout</string>
+    <string name="lbl_attachments">Attachments</string>
+    <string name="lbl_dt_sep_today">Today</string>
+    <string name="lbl_dt_sep_week">This Week</string>
+    <string name="lbl_dt_sep_older">Older</string>
+    <string name="NO_LOAD_EMAIL">Could not load email information.</string>
+    <string name="msg_invalid_login">Incorrect username or password</string>
+    <string name="btn_refresh">Refresh</string>
+    <string name="hnt_username">username</string>
+    <string name="hnt_password">password</string>
+    <string name="tst_no_email_list">Could not load email list</string>
+    <string name="tst_no_ann">Error loading announcement</string>
+    <string name="btn_label_login">Login</string>
+    <string name="lbl_due_items">Due Soon</string>
+    <string name="lbl_contents">Contents</string>
+    <string name="lbl_grades">Grades</string>
+    <string name="lbl_announcements">Announcements</string>
+
+</resources>

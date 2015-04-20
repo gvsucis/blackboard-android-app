@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="gvsu_blue">#0065A4</color>
+    <color name="gvsu_blue_light">#88B3DA</color>
+    <color name="gvsu_blue_dark">#004875</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gvsu_list_item_bg">#DEDEDE</color>
+    <color name="gvsu_list_item_text">#363636</color>
+    <color name="gvsu_list_item_bg_dark">#363636</color>
+    <color name="gvsu_text_medium">#ababab</color>
+    <color name="red">#ff0000</color>
+    <color name="transparent">#00000000</color>
+    <color name="gvsu_text_light">#cccccc</color>
+</resources>

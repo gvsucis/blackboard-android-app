@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewAnn">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/linearLayout"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:background="@color/gvsu_blue"
+        android:layout_toRightOf="@+id/imageView">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/gvsu_large"
+            android:id="@+id/tv_ann_title"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/gvsu_medium"
+            android:textColor="@color/gvsu_text_medium"
+            android:id="@+id/tv_ann_crs_name"
+            android:clickable="true"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/gvsu_medium"
+            android:textColor="@color/gvsu_text_medium"
+            android:id="@+id/tv_ann_date"
+            android:clickable="true"
+            android:gravity="center"
+            />
+
+
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/wv_ann_desc"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/linearLayout" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_gravity="left|center_vertical"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ann_icon_white"
+        android:background="@color/gvsu_blue"
+        android:layout_above="@+id/wv_ann_desc"
+        android:padding="10dp" />
+
+
+</RelativeLayout>
